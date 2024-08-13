@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+body {
+  background: linear-gradient(to bottom right, #064e3b, #0f172a);
+} */
+
+.wrapper {
+  max-width: 1380px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+
+.loader {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+/* Loading */
+
+.loader-large {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #adfce0;
+  border-radius: 10px;
+  animation: loading 2s infinite;
+}
+
+.loader-small {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  inset: 0;
+  margin: auto;
+  background-color: #10B77F;
+  z-index: 2;
+  border-radius: 6px;
+  animation: loading 2s infinite reverse;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+@layer base {
+  :root {
+    --background: 158 64% 98%;
+    --foreground: 160 84% 4%;
+    --card: 158 64% 98%;
+    --card-foreground: 160 84% 4%;
+    --popover: 158 64% 98%;
+    --popover-foreground: 160 84% 4%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 160 100% 97%;
+    --secondary: 162 46% 93%;
+    --secondary-foreground: 160 84% 4%;
+    --muted: 162 46% 93%;
+    --muted-foreground: 160 35% 40%;
+    --accent: 162 46% 93%;
+    --accent-foreground: 160 84% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 160 30% 90%;
+    --input: 160 30% 90%;
+    --ring: 160 84% 39%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 168 76% 9%;
+    --foreground: 160 10% 95%;
+    --card: 166 63% 15%;
+    --card-foreground: 160 10% 95%;
+    --popover: 168 76% 9%;
+    --popover-foreground: 160 10% 95%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 160 100% 97%;
+    --secondary: 164 56% 16%;
+    --secondary-foreground: 160 10% 98%;
+    --muted: 164 56% 16%;
+    --muted-foreground: 160 20% 70%;
+    --accent: 164 56% 16%;
+    --accent-foreground: 160 10% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 86% 97%;
+    --border: 164 56% 16%;
+    --input: 164 56% 16%;
+    --ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
