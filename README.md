@@ -40,32 +40,4 @@ Cyclotron is an AI content generation platform built with Next.js 14, Drizzle OR
    npm run dev
    ```
 
-## Preview
 
-Here are some screenshots of the Cyclotron platform:
-
-1. **Landing Page**
-
-   ![Landing Page](Landing_page.png)
-
-2. **User Dashboard**
-
-   ![User Dashboard](Dashboard_image.png)
-
-3. **Chatbot**
-
-   ![Chatbot](Chatbot_image.png)
-
-4. **Templates**
-
-   ![Templates](Templates_image.png)
-
-## Demo
-
-Check out the live demo of Cyclotron [here](https://Cyclotron-nine.vercel.app).
-
-## Contributing
-
-We welcome contributions to enhance Cyclotron. Feel free to open issues or submit pull requests.
-
-Thank you for checking out Cyclotron! If you have any questions or feedback, feel free to reach out. Happy content generating!
