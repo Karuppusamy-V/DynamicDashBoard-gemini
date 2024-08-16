@@ -15,7 +15,7 @@ Cyclotron is an AI content generation platform built with Next.js 14, Drizzle OR
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Devsethi3/Cyclotron.git
+   git clone https://github.com/Karuppusamy-V/DynamicDashBoard-gemini
    ```
 
 2. Navigate to the project directory:
